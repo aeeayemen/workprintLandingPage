@@ -1,188 +1,97 @@
-@@include('header.htm')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Careers & Open Source | Workprint</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Careers and open source collaboration with the Workprint engineering team.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-@@include('blocks/navigation.htm', {"pages" : "active", "career" : "active"})
+<body class="body-wrapper">
 
-@@include('blocks/page-title.htm',{
-	"title"		: "Career",
-	"description": "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. magna dictum porta."
-})
+<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+  <div class="container">
+    <a class="navbar-brand py-1" href="index.html">
+      <img src="images/logo.svg" alt="Workprint" height="36">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="ti-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Architecture</a></li>
+        <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Legal <span><i class="ti-angle-down"></i></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a class="dropdown-item" href="privacy-policy.html#personal-data">Personal Data Declaration</a></li>
+            <li><a class="dropdown-item" href="terms.html">Terms of Service</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Support</a></li>
+        <li class="nav-item ml-lg-3 mt-2 mt-lg-0"><a class="btn btn-main-sm" href="index.html#install">Install App</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-
-<!--==================================
-=            Career Promo            =
-===================================-->
-<section class="section career-featured pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="block">
-					<!-- written-content -->
-					<div class="content">
-						<!-- Career heading -->
-						<h2>Who we're looking for</h2>
-						<!-- Career Description -->
-						<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed,convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat.Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis</p>
-					</div>
-					<!-- Promo Video -->
-					<div class="video">
-						<!-- Video Thumb -->
-						<img class="img-fluid shadow" src="images/thumbs/promo-video-thumbnail.jpg" alt="video-thumbnail">
-						<!-- Video Button -->
-						<div class="video-button video-box">
-							<a href="javascript:void(0)">
-								<i class="ti-control-play" data-video="https://www.youtube.com/embed/jrkvirglgaQ?autoplay=1"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<section class="section gradient-banner pb-4 pt-5">
+  <div class="container position-relative">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-9">
+        <div class="mb-3">
+          <span class="wp-lozenge wp-lozenge-brand mr-2">Workprint Team</span>
+          <span class="wp-lozenge wp-lozenge-rovo">Atlassian Forge Builders</span>
+        </div>
+        <h1 class="text-white font-weight-bold mb-3">Careers at Workprint</h1>
+        <p class="text-white opacity-90 lead" style="font-size: 17px; line-height: 28px;">
+          We are engineers and product creators building the next generation of capacity intelligence for modern software teams.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
-<!--====  End of Career Promo  ====-->
 
-<!--=============================
-=            Gallery            =
-==============================-->
-<section class="gallery">
-	<div class="container-fluid p-0">
-		<div class="row no-gutters">
-			<div class="col-md-4">
-				<div class="image">
-					<img data-fancybox="gallery" href="images/gallery/gallery-01.jpg" class="img-fluid" src="images/gallery/gallery-01.jpg" alt="">
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="image">
-					<img data-fancybox="gallery" href="images/gallery/gallery-02.jpg" class="img-fluid" src="images/gallery/gallery-02.jpg" alt="">
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="image">
-					<img data-fancybox="gallery" href="images/gallery/gallery-03.jpg" class="img-fluid" src="images/gallery/gallery-03.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
+<section class="section pt-5 pb-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="bg-white p-4 p-md-5 rounded border shadow-sm">
+          <h3 class="font-weight-bold text-dark mb-3">Our Engineering Philosophy</h3>
+          <p class="text-muted mb-4" style="font-size: 15px; line-height: 26px;">
+            We believe that software developers do their best work when their workloads are sustainable and transparent. We build tools that protect engineering focus, eliminate review bottlenecks, and honor developer well-being.
+          </p>
+          
+          <h5 class="font-weight-bold text-dark mb-3">Open Inquiries & Maintainer Contributions</h5>
+          <p class="text-muted mb-4" style="font-size: 14px; line-height: 24px;">
+            Interested in collaborating on Atlassian Forge, Rovo AI prompt systems, or engineering capacity analytics? We welcome community contributions and inquiries.
+          </p>
+
+          <a href="contact.html" class="btn btn-main-sm">Contact the Maintainer Team &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!--====  End of Gallery  ====-->
 
-<!--===============================
-=            Fun Facts            =
-================================-->
-<section class="company-fun-facts section">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 text-center">
-				<h2>Some amenities for you to enjoy</h2>
-			</div>
-		</div>
-		<div class="row">		
-			<div class="col-lg-3 col-md-6">
-				<div class="fun-fact">
-					<!-- Icon -->
-					<i class="ti-timer"></i>
-					<h3>Flexible hours</h3>
-					<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada.</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<div class="fun-fact">
-					<!-- Icon -->
-					<i class="ti-filter"></i>
-					<h3>Free Snacks & Drinks</h3>
-					<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada.</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<div class="fun-fact">
-					<!-- Icon -->
-					<i class="ti-game"></i>
-					<h3>Gaming</h3>
-					<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada.</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<div class="fun-fact">
-					<!-- Icon -->
-					<i class="ti-hummer"></i>
-					<h3>4 Working Days</h3>
-					<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Fun Facts  ====-->
+<footer>
+  <div class="text-center bg-dark py-4">
+    <div class="container">
+      <small class="text-secondary">Copyright &copy; 2026 Workprint. All rights reserved. Built for Atlassian Cloud.</small>
+    </div>
+  </div>
+</footer>
 
-<!--===============================
-=            Job lists            =
-================================-->
-<section class="job-list section pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-lg-10 m-auto">
-				<div class="block">
-					<div class="title text-center">
-						<h2>Job Opening</h2>
-					</div>
-					<!-- Job List -->
-					<div class="job">
-						<div class="content">
-							<!-- Job Title -->
-							<h3>Andriod Developer</h3>
-							<!-- Location -->
-							<p>Hamburg, Germany</p>
-						</div>
-						<!-- Action Button -->
-						<div class="apply-button">
-							<a href="#" class="btn btn-main-sm" data-toggle="modal" data-target="#android-developer">View Details</a>
-							@@include('blocks/job-description-modal.htm')
-						</div>
-					</div>
-					<div class="job">
-						<div class="content">
-							<!-- Job Title -->
-							<h3>DevOps Engineer</h3>
-							<!-- Location -->
-							<p>London, United Kingdom</p>
-						</div>
-						<!-- Action Button -->
-						<div class="apply-button">
-							<a href="#" class="btn btn-main-sm" data-toggle="modal" data-target="#android-developer">View Details</a>
-						</div>
-					</div>
-					<div class="job">
-						<div class="content">
-							<!-- Job Title -->
-							<h3>Operations Associate / Manager </h3>
-							<!-- Location -->
-							<p>New Jersey , USA</p>
-						</div>
-						<!-- Action Button -->
-						<div class="apply-button">
-							<a href="#" class="btn btn-main-sm" data-toggle="modal" data-target="#android-developer">View Details</a>
-						</div>
-					</div>
-					<div class="job">
-						<div class="content">
-							<!-- Job Title -->
-							<h3>International Compliance Officer</h3>
-							<!-- Location -->
-							<p>New Jersey , USA</p>
-						</div>
-						<!-- Action Button -->
-						<div class="apply-button">
-							<a href="#" class="btn btn-main-sm" data-toggle="modal" data-target="#android-developer">View Details</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Job lists  ====-->
-
-@@include('blocks/footer.htm')
-
-@@include('footer.htm')
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

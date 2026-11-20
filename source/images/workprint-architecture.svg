@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" width="680" height="380" fill="none">
+  <defs>
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#091e42" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="forgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0052cc"/>
+      <stop offset="100%" stop-color="#0747a6"/>
+    </linearGradient>
+    <linearGradient id="rovoAgentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6554c0"/>
+      <stop offset="100%" stop-color="#0052cc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Atlassian Cloud Security Boundary Box -->
+  <rect x="16" y="16" width="648" height="348" rx="10" fill="#fafbfc" stroke="#dfe1e6" stroke-dasharray="4 4" stroke-width="1.5"/>
+  <rect x="28" y="26" width="220" height="22" rx="4" fill="#ebecf0"/>
+  <text x="138" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#42526e" text-anchor="middle">ATLASSIAN CLOUD TENANT BOUNDARY</text>
+
+  <!-- 1. Jira Source -->
+  <g filter="url(#boxShadow)">
+    <rect x="36" y="70" width="168" height="80" rx="8" fill="#ffffff" stroke="#dfe1e6" stroke-width="1"/>
+    <rect x="48" y="82" width="28" height="28" rx="6" fill="#deebff"/>
+    <text x="62" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#0052cc" text-anchor="middle">J</text>
+    <text x="86" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#172b4d">Jira Software</text>
+    <text x="86" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#5e6c84">POST /rest/api/3/search/jql</text>
+    <text x="48" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#0052cc">api.asApp() • read:jira-work</text>
+  </g>
+
+  <!-- 2. Confluence Source -->
+  <g filter="url(#boxShadow)">
+    <rect x="36" y="166" width="168" height="80" rx="8" fill="#ffffff" stroke="#dfe1e6" stroke-width="1"/>
+    <rect x="48" y="178" width="28" height="28" rx="6" fill="#e6fcff"/>
+    <text x="62" y="196" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#00a3bf" text-anchor="middle">C</text>
+    <text x="86" y="192" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#172b4d">Confluence</text>
+    <text x="86" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#5e6c84">CQL contributor search</text>
+    <text x="48" y="234" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#00a3bf">api.asApp() • read:confluence</text>
+  </g>
+
+  <!-- 3. Bitbucket Cloud Source -->
+  <g filter="url(#boxShadow)">
+    <rect x="36" y="262" width="168" height="80" rx="8" fill="#ffffff" stroke="#dfe1e6" stroke-width="1"/>
+    <rect x="48" y="274" width="28" height="28" rx="6" fill="#deebff"/>
+    <text x="62" y="292" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#2684ff" text-anchor="middle">B</text>
+    <text x="86" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#172b4d">Bitbucket Cloud</text>
+    <text x="86" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#5e6c84">REST API v2 (PRs &amp; Commits)</text>
+    <text x="48" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#2684ff">OAuth / Repo Access Token</text>
+  </g>
+
+  <!-- Center: Workprint Forge Node.js Runtime -->
+  <g filter="url(#boxShadow)">
+    <rect x="256" y="90" width="188" height="210" rx="10" fill="url(#forgeGrad)"/>
+    <text x="350" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Workprint Engine</text>
+    <rect x="276" y="132" width="148" height="20" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="350" y="146" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">Atlassian Forge Node.js 22</text>
+    
+    <text x="276" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#deebff">• In-Memory Telemetry Synth</text>
+    <text x="276" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#deebff">• Zero Outside Cloud Storage</text>
+    <text x="276" y="218" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#deebff">• 24h Retention Guarantee</text>
+    <text x="276" y="238" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#deebff">• No External User DB</text>
+
+    <rect x="276" y="258" width="148" height="26" rx="4" fill="#ffffff"/>
+    <text x="350" y="275" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0052cc" text-anchor="middle">Ephemeral Aggregation</text>
+  </g>
+
+  <!-- Right: Rovo AI Agent & Custom UI -->
+  <g filter="url(#boxShadow)">
+    <!-- Rovo Agent -->
+    <rect x="488" y="70" width="160" height="110" rx="8" fill="#ffffff" stroke="#dfd8fd" stroke-width="1.5"/>
+    <rect x="500" y="82" width="28" height="28" rx="6" fill="url(#rovoAgentGrad)"/>
+    <path d="M514 88L515.5 93L520.5 94.5L515.5 96L514 101L512.5 96L507.5 94.5L512.5 93L514 88Z" fill="#ffffff"/>
+    <text x="536" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#403294">Rovo AI Agent</text>
+    <text x="536" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#5243aa">workprint-rovo-agent</text>
+    <text x="500" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#5e6c84">Action: analyze-workprint</text>
+    <text x="500" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#5e6c84">Cross-tool capacity chat</text>
+  </g>
+
+  <g filter="url(#boxShadow)">
+    <!-- Custom UI Dashboard -->
+    <rect x="488" y="210" width="160" height="110" rx="8" fill="#ffffff" stroke="#dfe1e6" stroke-width="1.5"/>
+    <rect x="500" y="222" width="28" height="28" rx="6" fill="#deebff"/>
+    <path d="M506 228L509 239H510.5L512.5 233L514.5 239H516L519 228H517.5L515.5 235L513.5 229H512L510 235L508 228H506Z" fill="#0052cc"/>
+    <text x="536" y="236" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#172b4d">Workprint UI</text>
+    <text x="536" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#5e6c84">Jira &amp; Confluence Page</text>
+    <text x="500" y="282" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#5e6c84">Admin Capacity Console</text>
+    <text x="500" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#5e6c84">Deep-links &amp; Reassign UI</text>
+  </g>
+
+  <!-- Connectors -->
+  <path d="M204 110 H 256" stroke="#0052cc" stroke-width="2" stroke-linecap="round"/>
+  <path d="M204 206 H 256" stroke="#00a3bf" stroke-width="2" stroke-linecap="round"/>
+  <path d="M204 302 H 256" stroke="#2684ff" stroke-width="2" stroke-linecap="round"/>
+  
+  <path d="M444 140 H 488" stroke="#6554c0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M444 260 H 488" stroke="#0052cc" stroke-width="2" stroke-linecap="round"/>
+</svg>

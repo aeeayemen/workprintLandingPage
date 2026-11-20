@@ -1,342 +1,585 @@
-@@include('header.htm')
+﻿<!DOCTYPE html>
+<html lang="en">
 
-@@include('blocks/navigation.htm', {"home":"active", "home1": "active"})
+<head>
+  <meta charset="utf-8">
+  <title>Workprint | Cross-Platform Capacity Intelligence for Atlassian Cloud</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="Workprint unifies Jira, Confluence, and Bitbucket engineering telemetry with Atlassian Rovo AI to deliver real-time developer workload analysis, PR review lag tracking, and sprint capacity planning.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Anas Adel Ismail">
 
-<!--====================================
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="body-wrapper">
+
+  <!-- Navigation -->
+  <nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+    <div class="container">
+      <a class="navbar-brand py-1" href="index.html">
+        <img src="images/logo.svg" alt="Workprint" height="36">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="ti-menu"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto align-items-lg-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <!-- <li class="nav-item">
+          <a class="nav-link" href="#rovo">Rovo AI Agent</a>
+        </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Architecture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Legal
+              <span><i class="ti-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a class="dropdown-item" href="privacy-policy.html#personal-data">Personal Data Declaration</a></li>
+              <li><a class="dropdown-item" href="terms.html">Terms of Service</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Support</a>
+          </li>
+          <li class="nav-item ml-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-main-sm" href="#install">Install App</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--====================================
 =            Hero Section            =
 =====================================-->
-<section class="section gradient-banner">
-	<div class="shapes-container">
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></div>
-		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
-		<div class="shape" data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"></div>
-	</div>
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-md-6 order-2 order-md-1 text-center text-md-left">
-				<h1 class="text-white font-weight-bold mb-4">Showcase your app with Small Apps</h1>
-				<p class="text-white mb-5">Besides its beautiful design. Laapp is an incredibly rich core framework for you to
-					showcase your App.</p>
-				<a href="FAQ.html" class="btn btn-main-md">Download Now</a>
-			</div>
-			<div class="col-md-6 text-center order-1 order-md-2">
-				<img class="img-fluid" src="images/mobile.png" alt="screenshot">
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Hero Section  ====-->
+  <section class="section gradient-banner">
+    <div class="shapes-container">
+      <div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
+      <div class="shape" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
+      <div class="shape" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200"></div>
+      <div class="shape" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
+      <div class="shape" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></div>
+      <div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="200"></div>
+      <div class="shape" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500"></div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-left">
+          <div class="mb-3">
+            <span class="wp-lozenge wp-lozenge-brand mr-2">Atlassian Forge</span>
+            <span class="wp-lozenge wp-lozenge-rovo mr-2">Rovo AI Powered</span>
+            <span class="wp-lozenge wp-lozenge-success">Zero Outside Storage</span>
+          </div>
+          <h1 class="text-white font-weight-bold mb-3" style="font-size: 40px; line-height: 50px;">
+            Cross-Platform Engineering Capacity Intelligence
+          </h1>
+          <p class="text-white opacity-90 mb-4" style="font-size: 17px; line-height: 27px;">
+            Workprint synthesizes developer workload, PR review lag, and documentation context across <strong>Jira,
+              Bitbucket, and Confluence</strong>. Powered by Atlassian Rovo AI for real-time team balance and sprint
+            velocity.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start" style="gap: 12px;">
+            <a href="#install" class="btn btn-main-md">
+              <i class="ti-cloud-down mr-1"></i> Install for Jira & Confluence
+            </a>
+            <a href="contact.html" class="btn btn-secondary-wp bg-white text-primary">
+              <i class="ti-headphone-alt mr-1"></i> Customer Support
+            </a>
+          </div>
+          <div class="mt-4 text-white-50" style="font-size: 13px;">
+            <i class="ti-shield mr-1 text-success"></i> 100% Ephemeral In-Memory Aggregation &bull; Verified Forge
+            Security
+          </div>
+        </div>
+        <div class="col-lg-6 text-center order-1 order-lg-2 mb-5 mb-lg-0">
+          <div class="image-content" data-aos="fade-left">
+            <img class="img-fluid rounded shadow-lg" src="images/workprint-hero-dashboard.svg"
+              alt="Workprint Capacity Intelligence Dashboard"
+              style="max-width: 100%; border: 1px solid rgba(255,255,255,0.2);">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="section pt-0 position-relative pull-top">
-	<div class="container">
-		<div class="rounded shadow p-5 bg-white">
-			<div class="row">
-				<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
-					<i class="ti-paint-bucket text-primary h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">themes made easy</h3>
-					<p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
-						tempore ipsam dignissimos molestias.</p>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
-					<i class="ti-shine text-primary h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">powerful design</h3>
-					<p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
-						tempore ipsam dignissimos molestias.</p>
-				</div>
-				<div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
-					<i class="ti-thought text-primary h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">creative content</h3>
-					<p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
-						tempore ipsam dignissimos molestias.</p>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+  <!--=============================================
+=            Pillar Features Callout            =
+==============================================-->
+  <section class="section pt-0 position-relative pull-top">
+    <div class="container">
+      <div class="rounded shadow p-4 p-md-5 bg-white border">
+        <div class="row">
+          <!-- Pillar 1 -->
+          <div class="col-lg-4 col-md-6 text-center mb-4 mb-lg-0">
+            <div class="p-3">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                style="width: 60px; height: 60px; background: #deebff; color: #0052cc; font-size: 26px;">
+                <i class="ti-layers-alt"></i>
+              </div>
+              <h3 class="font-weight-bold h5 text-dark">Jira Workload Telemetry</h3>
+              <p class="text-muted" style="font-size: 14px; line-height: 22px;">
+                Live issue tracking, allocated timetracking hours, and remaining estimates queried directly via Jira
+                Cloud REST API v3 (<span class="wp-code-inline">POST /rest/api/3/search/jql</span>) with <span
+                  class="wp-code-inline">api.asApp()</span>.
+              </p>
+            </div>
+          </div>
 
-<!--==================================
-=            Feature Grid            =
-===================================-->
-<section class="feature section pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 ml-auto justify-content-center">
-				<!-- Feature Mockup -->
-				<div class="image-content" data-aos="fade-right">
-					<img class="img-fluid" src="images/feature/feature-new-01.jpg" alt="iphone">
-				</div>
-			</div>
-			<div class="col-lg-6 mr-auto align-self-center">
-				<div class="feature-content">
-					<!-- Feature Title -->
-					<h2>Increase your productivity with <a
-							href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a></h2>
-					<!-- Feature Description -->
-					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat.</p>
-				</div>
-				<!-- Testimonial Quote -->
-				<div class="testimonial">
-					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one
-						place."
-					</p>
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Jonathon Andrew , Themefisher.com</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+          <!-- Pillar 2 -->
+          <div class="col-lg-4 col-md-6 text-center mb-4 mb-lg-0">
+            <div class="p-3">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                style="width: 60px; height: 60px; background: #e6fcff; color: #00a3bf; font-size: 26px;">
+                <i class="ti-time"></i>
+              </div>
+              <h3 class="font-weight-bold h5 text-dark">Bitbucket Review Lag</h3>
+              <p class="text-muted" style="font-size: 14px; line-height: 22px;">
+                Surface code review bottlenecks and pending PR turnaround lag via Bitbucket REST API v2. Workspace-level
+                token integration with zero per-user login requirements.
+              </p>
+            </div>
+          </div>
 
-<section class="feature section pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 ml-auto align-self-center">
-				<div class="feature-content">
-					<!-- Feature Title -->
-					<h2>Increase your productivity with <a
-							href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a></h2>
-					<!-- Feature Description -->
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-						ea commodo consequat.</p>
-				</div>
-				<!-- Testimonial Quote -->
-				<div class="testimonial">
-					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one
-						place."
-					</p>
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Jonathon Andrew , Themefisher.com</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-6 mr-auto justify-content-center">
-				<!-- Feature mockup -->
-				<div class="image-content" data-aos="fade-left">
-					<img class="img-fluid" src="images/feature/feature-new-02.jpg" alt="ipad">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Feature Grid  ====-->
+          <!-- Pillar 3 -->
+          <div class="col-lg-4 col-md-12 text-center">
+            <div class="p-3">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                style="width: 60px; height: 60px; background: #eae6ff; color: #6554c0; font-size: 26px;">
+                <i class="ti-wand"></i>
+              </div>
+              <h3 class="font-weight-bold h5 text-dark">Rovo AI Capacity Agent</h3>
+              <p class="text-muted" style="font-size: 14px; line-height: 22px;">
+                Ask natural language capacity questions in Atlassian Rovo chat. Action <span
+                  class="wp-code-inline">analyze-workprint</span> detects critical path overload and provides one-click
+                deep links.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!--==============================
-=            Services            =
-===============================-->
-<section class="service section bg-gray">
-	<div class="container-fluid p-0">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>An Interface For Lifestyle</h2>
-					<p><a href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a> makes
-						it easy to stay on top of your Life Style. No late tasks. No gimmicks.</p>
-				</div>
-			</div>
-		</div>
-		<div class="row no-gutters">
-			<div class="col-lg-6 align-self-center">
-				<!-- Feature Image -->
-				<div class="service-thumb left" data-aos="fade-right">
-					<img class="img-fluid" src="images/feature/iphone-ipad.jpg" alt="iphone-ipad">
-				</div>
-			</div>
-			<div class="col-lg-5 mr-auto align-self-center">
-				<div class="service-box">
-					<div class="row align-items-center">
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-bookmark"></i>
-								<!-- Heading -->
-								<h3>Easy Prototyping</h3>
-								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-pulse"></i>
-								<!-- Heading -->
-								<h3>Sensor Bridge</h3>
-								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-bar-chart"></i>
-								<!-- Heading -->
-								<h3>Strategist</h3>
-								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-xs-12">
-							<!-- Service 01 -->
-							<div class="service-item">
-								<!-- Icon -->
-								<i class="ti-panel"></i>
-								<!-- Heading -->
-								<h3>Art Direction</h3>
-								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Services  ====-->
+  <!--=============================================
+=            Feature 1: Rovo AI Agent           =
+==============================================-->
+  <section class="feature section pt-4" id="rovo">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="p-4 rounded border bg-white shadow-sm"
+            style="background: linear-gradient(180deg, #faf5ff 0%, #ffffff 100%);">
+            <!-- Rovo Chat Mockup -->
+            <div class="d-flex align-items-center pb-3 mb-3 border-bottom">
+              <div
+                class="rounded-circle mr-3 d-flex align-items-center justify-content-center text-white font-weight-bold"
+                style="width: 38px; height: 38px; background: linear-gradient(135deg, #6554c0, #0052cc);">
+                <i class="ti-bolt"></i>
+              </div>
+              <div>
+                <h6 class="font-weight-bold text-dark mb-0">Workprint Capacity Agent</h6>
+                <small class="text-muted">Atlassian Rovo Agent &bull; <span class="wp-code-inline">key:
+                    workprint-rovo-agent</span></small>
+              </div>
+            </div>
 
+            <!-- Chat bubble user -->
+            <div class="mb-3 text-right">
+              <div class="d-inline-block text-left p-3 rounded"
+                style="background: #0052cc; color: #ffffff; max-width: 80%; font-size: 14px;">
+                Who has available sprint bandwidth to review PR #482?
+              </div>
+            </div>
 
-<!--=================================
-=            Video Promo            =
-==================================-->
-<section class="video-promo section bg-1">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="content-block">
-					<!-- Heading -->
-					<h2>Watch Our Promo Video</h2>
-					<!-- Promotional Speech -->
-					<p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et,
-						porttitor at sem. Vivamus </p>
-					<!-- Popup Video -->
-					<a data-fancybox href="https://www.youtube.com/watch?v=jrkvirglgaQ">
-						<i class="ti-control-play video"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Video Promo  ====-->
+            <!-- Chat bubble agent -->
+            <div class="mb-3">
+              <div class="p-3 rounded border"
+                style="background: #f4f5f7; color: #172b4d; font-size: 13px; line-height: 20px;">
+                <strong class="text-rovo d-block mb-1"><i class="ti-check mr-1"></i> Rovo Capacity Analysis:</strong>
+                &bull; <strong>Sarah Connor</strong> is at <strong>58% capacity</strong> (23.2h logged, 3 active tasks)
+                with 0 open PR reviews.<br>
+                &bull; <strong>Alex Chen</strong> is currently at <strong>92% load</strong> with 4 pending reviews on
+                <span class="wp-code-inline">workprint/feature</span>.<br>
+                <div class="mt-2 pt-2 border-top">
+                  <a href="#install" class="btn btn-sm btn-rovo text-white py-1 px-2" style="font-size: 11px;">
+                    Open Sarah's Workprint Dashboard &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
 
-<!--=================================
-=            Testimonial            =
-==================================-->
-<section class="section testimonial" id="testimonial">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<!-- Testimonial Slider -->
-				<div class="testimonial-slider owl-carousel owl-theme">
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>
-								Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.
-								Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor
-								sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
-								pretium ut lacinia in, elementum id enim.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
-							</div>
-							<!-- Name and Company -->
-							<cite>Abraham Linkon , Themefisher.com</cite>
-						</div>
-					</div>
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>
-								Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.
-								Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor
-								sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
-								pretium ut lacinia in, elementum id enim.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
-							</div>
-							<!-- Name and Company -->
-							<cite>Abraham Linkon , Themefisher.com</cite>
-						</div>
-					</div>
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>
-								Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.
-								Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor
-								sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
-								pretium ut lacinia in, elementum id enim.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
-							</div>
-							<!-- Name and Company -->
-							<cite>Abraham Linkon , Themefisher.com</cite>
-						</div>
-					</div>
-					<!-- Testimonial 01 -->
-					<div class="item">
-						<div class="block shadow">
-							<!-- Speech -->
-							<p>
-								Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.
-								Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor
-								sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
-								pretium ut lacinia in, elementum id enim.
-							</p>
-							<!-- Person Thumb -->
-							<div class="image">
-								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
-							</div>
-							<!-- Name and Company -->
-							<cite>Abraham Linkon , Themefisher.com</cite>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Testimonial  ====-->
+            <div class="p-2 rounded bg-light border text-center">
+              <small class="text-muted">Invokes Forge Action <span class="wp-code-inline">analyze-workprint</span> via
+                Atlassian Rovo Decisions API</small>
+            </div>
+          </div>
+        </div>
 
-@@include('blocks/call-to-action-app.htm')
+        <div class="col-lg-6 pl-lg-5">
+          <span class="wp-lozenge wp-lozenge-rovo mb-2">Atlassian Rovo Integration</span>
+          <h2 class="font-weight-bold mb-3">Instant Capacity Intelligence in Rovo Chat</h2>
+          <p class="text-muted mb-4" style="font-size: 16px; line-height: 26px;">
+            No more guessing who can take on the next priority ticket or why pull requests are stuck in review. The
+            <strong>Workprint Capacity Agent</strong> synthesizes telemetry directly into your Atlassian Rovo
+            conversation.
+          </p>
+          <ul class="list-unstyled mb-4" style="font-size: 14px; line-height: 28px;">
+            <li class="d-flex align-items-center mb-2">
+              <i class="ti-check text-success mr-2 font-weight-bold"></i>
+              <span><strong>Workload Synthesis:</strong> Active issues, logged hours, and remaining estimates.</span>
+            </li>
+            <li class="d-flex align-items-center mb-2">
+              <i class="ti-check text-success mr-2 font-weight-bold"></i>
+              <span><strong>PR Bottleneck Detection:</strong> Flags high review loads before sprint deadlines
+                slip.</span>
+            </li>
+            <li class="d-flex align-items-center mb-2">
+              <i class="ti-check text-success mr-2 font-weight-bold"></i>
+              <span><strong>Markdown Deep Links:</strong> Jump straight to the engineer's Jira global Workprint
+                view.</span>
+            </li>
+          </ul>
+          <a href="FAQ.html#rovo" class="btn btn-main-sm">
+            Explore Rovo Agent Prompts &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-@@include('blocks/footer.htm')
+  <!--=============================================
+=            Feature 2: Admin Dashboard         =
+==============================================-->
+  <section class="feature section pt-0" id="features">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-2 order-lg-1 pr-lg-5">
+          <span class="wp-lozenge wp-lozenge-brand mb-2">Unified Telemetry Dashboard</span>
+          <h2 class="font-weight-bold mb-3">Cross-Functional Telemetry Across Jira, Confluence & Bitbucket</h2>
+          <p class="text-muted mb-4" style="font-size: 16px; line-height: 26px;">
+            Workprint bridges the silos between project boards, technical documentation, and code reviews. Engineering
+            leads gain total visibility into where time is actually being spent.
+          </p>
 
-@@include('footer.htm')
+          <div class="mb-3 p-3 bg-white rounded border">
+            <h6 class="font-weight-bold text-dark mb-1">
+              <span class="wp-lozenge wp-lozenge-brand mr-1">Jira</span> 40-Hour Sprint Allocation
+            </h6>
+            <p class="text-muted mb-0" style="font-size: 13px;">
+              Standardized 40.0-hour sprint benchmarks with real-time remaining estimate calculations and status
+              distributions (In Progress vs In Review vs To Do).
+            </p>
+          </div>
+
+          <div class="mb-3 p-3 bg-white rounded border">
+            <h6 class="font-weight-bold text-dark mb-1">
+              <span class="wp-lozenge wp-lozenge-success mr-1">Confluence</span> Documentation Workload
+            </h6>
+            <p class="text-muted mb-0" style="font-size: 13px;">
+              CQL contributor tracking correlates active RFCs and architectural specs under edit with assigned
+              engineering tasks.
+            </p>
+          </div>
+
+          <div class="p-3 bg-white rounded border">
+            <h6 class="font-weight-bold text-dark mb-1">
+              <span class="wp-lozenge mr-1" style="background: #e6fcff; color: #00a3bf;">Bitbucket</span> Review Lag &
+              Turnaround Lag
+            </h6>
+            <p class="text-muted mb-0" style="font-size: 13px;">
+              Tracks pending pull request reviews and commit activity to prevent silent reviewer burnout.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+          <div class="p-4 rounded border bg-white shadow-sm text-center">
+            <img class="img-fluid rounded" src="images/workprint-hero-dashboard.svg" alt="Workprint Dashboard Features">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=============================================
+=            Architecture & Security            =
+==============================================-->
+  <section class="section bg-light" id="architecture">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8">
+          <span class="wp-lozenge wp-lozenge-success mb-2">Atlassian Forge Platform Security</span>
+          <h2 class="font-weight-bold">Zero Outside-Cloud Storage Architecture</h2>
+          <p class="text-muted" style="font-size: 16px;">
+            Unlike legacy Connect plugins that transmit your proprietary telemetry to third-party servers, Workprint
+            runs 100% inside Atlassian Forge's secure cloud sandbox.
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="p-4 rounded border bg-white shadow-sm">
+            <img class="img-fluid" src="images/workprint-architecture.svg" alt="Workprint Forge Cloud Architecture">
+          </div>
+        </div>
+
+        <div class="col-lg-5 pl-lg-4">
+          <div class="mb-4">
+            <h5 class="font-weight-bold text-dark mb-2">
+              <i class="ti-server text-primary mr-2"></i> Atlassian Tenant Isolation
+            </h5>
+            <p class="text-muted" style="font-size: 14px; line-height: 22px;">
+              Forge functions execute inside Node.js 22 containers isolated within your Atlassian site. Cross-tenant
+              data leakage is architecturally prohibited.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h5 class="font-weight-bold text-dark mb-2">
+              <i class="ti-lock text-success mr-2"></i> Personal Data Declaration Guarantee
+            </h5>
+            <p class="text-muted" style="font-size: 14px; line-height: 22px;">
+              Workprint does <strong>NOT copy, store, or cache user identifiers or personal data beyond 24 hours outside
+                Atlassian Cloud</strong>. All queries execute ephemerally in volatile memory.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h5 class="font-weight-bold text-dark mb-2">
+              <i class="ti-shield text-primary mr-2"></i> Strict Egress Controls
+            </h5>
+            <p class="text-muted" style="font-size: 14px; line-height: 22px;">
+              External network communication is strictly confined to <span
+                class="wp-code-inline">https://api.bitbucket.org</span> as registered in the app manifest. Zero
+              third-party trackers or ads.
+            </p>
+          </div>
+
+          <a href="privacy-policy.html#personal-data" class="btn btn-secondary-wp font-weight-bold">
+            Read Personal Data Declaration &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=============================================
+=            Installation & Distribution        =
+==============================================-->
+  <section class="section" id="install">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8">
+          <span class="wp-lozenge wp-lozenge-brand mb-2">App Distribution</span>
+          <h2 class="font-weight-bold">Deploy Workprint to Your Atlassian Cloud Site</h2>
+          <p class="text-muted" style="font-size: 16px;">
+            Deploy in minutes with Atlassian Forge CLI or install via Atlassian Marketplace.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Step 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-white rounded border h-100 shadow-sm">
+            <div class="d-inline-block p-2 rounded mb-3" style="background: #deebff; color: #0052cc; font-weight: 700;">
+              STEP 01
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Install App</h5>
+            <p class="text-muted mb-3" style="font-size: 14px;">
+              Install Workprint onto your Jira Cloud and Confluence Cloud instance via the Atlassian Forge CLI:
+            </p>
+            <div class="wp-code-block p-2" style="font-size: 12px;">
+              forge install --site workprint.atlassian.net --product jira
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-white rounded border h-100 shadow-sm">
+            <div class="d-inline-block p-2 rounded mb-3" style="background: #e6fcff; color: #00a3bf; font-weight: 700;">
+              STEP 02
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Connect Bitbucket</h5>
+            <p class="text-muted mb-3" style="font-size: 14px;">
+              Add your workspace Repository Access Token with <span class="wp-code-inline">read:pullrequest</span> scope
+              to enable review lag calculations.
+            </p>
+            <a href="FAQ.html#bitbucket" class="text-primary font-weight-bold" style="font-size: 13px;">
+              Bitbucket Configuration Guide &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-white rounded border h-100 shadow-sm">
+            <div class="d-inline-block p-2 rounded mb-3" style="background: #eae6ff; color: #6554c0; font-weight: 700;">
+              STEP 03
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Enable Rovo AI Agent</h5>
+            <p class="text-muted mb-3" style="font-size: 14px;">
+              Open Atlassian Rovo and chat with <span class="wp-code-inline">Workprint Capacity Agent</span> or visit
+              the Jira Workprint Global Page.
+            </p>
+            <a href="FAQ.html#rovo" class="text-rovo font-weight-bold" style="font-size: 13px;">
+              View Sample Rovo Prompts &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=============================================
+=            Customer Support Callout           =
+==============================================-->
+  <section class="section bg-blue py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 text-center text-lg-left mb-4 mb-lg-0">
+          <h2 class="text-white font-weight-bold mb-2">Need Help or Have Custom Permissions Questions?</h2>
+          <p class="text-white opacity-90 mb-0" style="font-size: 16px;">
+            Our customer support team assists Atlassian site administrators with installation, OAuth setup, and security
+            reviews.
+          </p>
+        </div>
+        <div class="col-lg-4 text-center text-lg-right">
+          <a href="contact.html" class="btn btn-secondary-wp bg-white text-primary px-4 py-3 font-weight-bold">
+            <i class="ti-headphone-alt mr-1"></i> Visit Customer Support Portal
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <div class="block">
+              <a href="index.html"><img src="images/logo-alt.svg" alt="Workprint" height="38"></a>
+              <p class="text-secondary mt-3 pr-lg-4" style="font-size: 14px; line-height: 22px;">
+                Workprint is an Atlassian Forge and Rovo AI capacity intelligence application that synthesizes
+                cross-platform engineering telemetry across Jira, Confluence, and Bitbucket.
+              </p>
+              <div class="mt-3">
+                <span class="wp-lozenge wp-lozenge-brand mr-2">Forge App</span>
+                <span class="wp-lozenge wp-lozenge-rovo mr-2">Rovo AI</span>
+                <span class="wp-lozenge wp-lozenge-success">Cloud Fortified</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 mt-4 mt-lg-0">
+            <div class="block-2">
+              <h6>Platform</h6>
+              <ul>
+                <li><a href="#features">Jira Telemetry</a></li>
+                <li><a href="#features">Bitbucket Review Lag</a></li>
+                <li><a href="#features">Confluence Specs</a></li>
+                <li><a href="#rovo">Rovo AI Agent</a></li>
+                <li><a href="about.html">Architecture</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 mt-4 mt-lg-0">
+            <div class="block-2">
+              <h6>Distribution & Legal</h6>
+              <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="privacy-policy.html#personal-data">Personal Data Declaration</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="about.html#security">Scopes & Security</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 mt-4 mt-lg-0">
+            <div class="block-2">
+              <h6>Support & Docs</h6>
+              <ul>
+                <li><a href="contact.html">Customer Support</a></li>
+                <li><a href="FAQ.html">Knowledge Base</a></li>
+                <li><a href="FAQ.html#installation">Installation Guide</a></li>
+                <li><a href="FAQ.html#bitbucket">Bitbucket OAuth Setup</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 mt-4 mt-lg-0">
+            <div class="block-2">
+              <h6>Maintainer</h6>
+              <ul>
+                <li><strong class="text-white">Anas Adel Ismail</strong></li>
+                <li><small class="text-secondary d-block">Yemen</small></li>
+                <li><a href="mailto:anasadelismail2023@gmail.com"><i class="ti-email mr-1"></i> Email</a></li>
+                <li><a href="https://wa.me/967770300304" target="_blank" rel="noopener"><i class="ti-mobile mr-1"></i> WhatsApp: +967 770 300 304</a></li>
+                <li><a href="https://github.com/aeeayemen" target="_blank" rel="noopener"><i class="ti-github mr-1"></i> GitHub: aeeayemen</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center bg-dark py-4 border-top border-secondary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-md-left text-center">
+            <small class="text-secondary">Copyright &copy; 2026 Workprint. Developed by Anas Adel Ismail & Abdulrahman Babeker (Yemen). All rights reserved.</small>
+          </div>
+          <div class="col-md-6 text-md-right text-center mt-2 mt-md-0">
+            <small class="text-secondary">
+              <a href="https://github.com/aeeayemen" target="_blank" rel="noopener" class="text-secondary mr-3"><i class="ti-github mr-1"></i>GitHub</a>
+              <a href="https://wa.me/967770300304" target="_blank" rel="noopener" class="text-secondary mr-3"><i class="ti-mobile mr-1"></i>WhatsApp</a>
+              <a href="privacy-policy.html" class="text-secondary mr-3">Privacy</a>
+              <a href="terms.html" class="text-secondary mr-3">Terms</a>
+              <a href="contact.html" class="text-secondary">Support</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+              <a href="contact.html" class="text-secondary">Support</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scroll-top-to">
+    <i class="ti-angle-up"></i>
+  </div>
+
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

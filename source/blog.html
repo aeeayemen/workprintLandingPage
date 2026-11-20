@@ -1,130 +1,200 @@
-@@include('header.htm')
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Engineering Blog & Release Notes | Workprint</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Technical articles, release notes, and engineering telemetry insights from the Workprint team.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-@@include('blocks/navigation.htm', {"pages" : "active", "blog" : "active"})
+<body class="body-wrapper">
 
-@@include('blocks/page-title.htm',{
-	"title" : "Blog",
-	"description" : "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta."
-})
-<!--======================================
-=            Featured Article            =
-=======================================-->
-<section class="section featured-article">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<article class="featured">
-					<!-- Image -->
-					<div class="image">
-						<a href="blog-single.html"><img class="img-fluid" src="images/feature/featured-article.jpg" alt="featured-article"></a>
-					</div>
-					<!-- written-content -->
-					<div class="content">
-						<!-- Post Title -->
-						<h2><a href="blog-single.html">Introducing New IOS App</a></h2>
-						<!-- Tags -->
-						<ul class="list-inline post-tag">
-							<li class="list-inline-item">
-								<img class="img-fluid" src="images/testimonial/feature-testimonial-thumb.jpg" alt="author-thumb">
-							</li>
-							<li class="list-inline-item">
-								<a href="#">Thomas Johnson</a>
-							</li>
-							<li class="list-inline-item">
-								August 8, 2017
-							</li>
-						</ul>
-						<!-- Post Body -->
-						<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed,convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat.Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis</p>
-						<a class="btn btn-main-sm" href="blog-single.html">Read more</a>
-					</div>
-				</article>
-			</div>
-		</div>
-	</div>
+<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+  <div class="container">
+    <a class="navbar-brand py-1" href="index.html">
+      <img src="images/logo.svg" alt="Workprint" height="36">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="ti-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Architecture</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="FAQ.html">FAQ</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Legal
+            <span><i class="ti-angle-down"></i></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a class="dropdown-item" href="privacy-policy.html#personal-data">Personal Data Declaration</a></li>
+            <li><a class="dropdown-item" href="terms.html">Terms of Service</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Support</a>
+        </li>
+        <li class="nav-item ml-lg-3 mt-2 mt-lg-0">
+          <a class="btn btn-main-sm" href="index.html#install">Install App</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="section gradient-banner pb-4 pt-5">
+  <div class="container position-relative">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-9">
+        <div class="mb-3">
+          <span class="wp-lozenge wp-lozenge-brand mr-2">Engineering Telemetry</span>
+          <span class="wp-lozenge wp-lozenge-rovo">Release Notes</span>
+        </div>
+        <h1 class="text-white font-weight-bold mb-3">Workprint Blog & Updates</h1>
+        <p class="text-white opacity-90 lead" style="font-size: 17px; line-height: 28px;">
+          Deep dives into Atlassian Forge architecture, Rovo AI prompt engineering, and developer capacity models.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!--====  End of Featured Article  ====-->
-<section class="post-grid section pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-01.jpg",
-					"post-title" 	: "Innovation distinguishes between a leader and a follower."
-				})
-			</div>
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-02.jpg",
-					"post-title" 	: "Design is not just what it looks like and feels like. Design is how it works."
-				})
-			</div>
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-03.jpg",
-					"post-title" 	: "Design is not just what it looks like and feels like. Design is how it works."
-				})
-			</div>
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-01.jpg",
-					"post-title" 	: "Innovation distinguishes between a leader and a follower."
-				})
-			</div>
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-02.jpg",
-					"post-title" 	: "Design is not just what it looks like and feels like. Design is how it works."
-				})
-			</div>
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-03.jpg",
-					"post-title" 	: "Design is not just what it looks like and feels like. Design is how it works."
-				})
-			</div>
-			<div class="col-12">
-				@@include('blocks/cta-community.htm')
-			</div>
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-01.jpg",
-					"post-title" 	: "Innovation distinguishes between a leader and a follower."
-				})
-			</div>
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-02.jpg",
-					"post-title" 	: "Design is not just what it looks like and feels like. Design is how it works."
-				})
-			</div>
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-03.jpg",
-					"post-title" 	: "Design is not just what it looks like and feels like. Design is how it works."
-				})
-			</div>
-			<div class="col-12">
-				<!-- Pagination -->
-				<nav class="pagination-nav">
-				  <ul class="pagination">
-				    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-				    <li class="page-item"><a class="page-link" href="#">2</a></li>
-				    <li class="page-item"><a class="page-link" href="#">3</a></li>
-				    <li class="page-item">
-				      <a class="page-link" href="#" aria-label="Next">
-				        <span aria-hidden="true"><i class="ti-angle-right"></i></span>
-				        <span class="sr-only">Next</span>
-				      </a>
-				    </li>
-				  </ul>
-				</nav>
-			</div>
-		</div>
-	</div>
+<section class="section pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <!-- Article 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="bg-white rounded border shadow-sm h-100 overflow-hidden">
+          <div class="p-4">
+            <span class="wp-lozenge wp-lozenge-rovo mb-2">Rovo AI</span>
+            <h5 class="font-weight-bold mb-2">
+              <a href="blog-single.html" class="text-dark">Building the Workprint Capacity Agent with Atlassian Rovo</a>
+            </h5>
+            <p class="text-muted mb-3" style="font-size: 14px; line-height: 22px;">
+              How we utilized Atlassian Rovo Agent prompts and Forge actions to synthesize cross-tool engineering bandwidth in conversational AI chat.
+            </p>
+            <a href="blog-single.html" class="text-primary font-weight-bold" style="font-size: 13px;">Read Article &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="bg-white rounded border shadow-sm h-100 overflow-hidden">
+          <div class="p-4">
+            <span class="wp-lozenge wp-lozenge-brand mb-2">Architecture</span>
+            <h5 class="font-weight-bold mb-2">
+              <a href="blog-single.html" class="text-dark">Why We Built Workprint with Zero Outside-Cloud Storage</a>
+            </h5>
+            <p class="text-muted mb-3" style="font-size: 14px; line-height: 22px;">
+              A technical overview of our ephemeral in-memory aggregation model on Forge Node.js 22, guaranteeing compliance with enterprise privacy standards.
+            </p>
+            <a href="blog-single.html" class="text-primary font-weight-bold" style="font-size: 13px;">Read Article &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="bg-white rounded border shadow-sm h-100 overflow-hidden">
+          <div class="p-4">
+            <span class="wp-lozenge wp-lozenge-success mb-2">Bitbucket</span>
+            <h5 class="font-weight-bold mb-2">
+              <a href="blog-single.html" class="text-dark">Measuring Pull Request Review Lag Without Annoying Developers</a>
+            </h5>
+            <p class="text-muted mb-3" style="font-size: 14px; line-height: 22px;">
+              How workspace-level Repository Access Tokens eliminate individual OAuth friction while keeping teams informed on review turnaround time.
+            </p>
+            <a href="blog-single.html" class="text-primary font-weight-bold" style="font-size: 13px;">Read Article &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-@@include('blocks/footer.htm')
+<!-- Footer -->
+<footer>
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <div class="block">
+            <a href="index.html"><img src="images/logo-alt.svg" alt="Workprint" height="38"></a>
+            <p class="text-secondary mt-3 pr-lg-4" style="font-size: 14px; line-height: 22px;">
+              Workprint is an Atlassian Forge and Rovo AI capacity intelligence application that synthesizes cross-platform engineering telemetry across Jira, Confluence, and Bitbucket.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 mt-4 mt-lg-0">
+          <div class="block-2">
+            <h6>Platform</h6>
+            <ul>
+              <li><a href="index.html#features">Jira Telemetry</a></li>
+              <li><a href="index.html#features">Bitbucket Review Lag</a></li>
+              <li><a href="index.html#features">Confluence Specs</a></li>
+              <li><a href="index.html#rovo">Rovo AI Agent</a></li>
+              <li><a href="about.html">Architecture</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 mt-4 mt-lg-0">
+          <div class="block-2">
+            <h6>Distribution & Legal</h6>
+            <ul>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="privacy-policy.html#personal-data">Personal Data Declaration</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 mt-4 mt-lg-0">
+          <div class="block-2">
+            <h6>Support</h6>
+            <ul>
+              <li><a href="contact.html">Customer Support</a></li>
+              <li><a href="FAQ.html">Knowledge Base</a></li>
+              <li><a href="FAQ.html#installation">Installation Guide</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 mt-4 mt-lg-0">
+          <div class="block-2">
+            <h6>Maintainer</h6>
+            <ul>
+              <li><a href="contact.html">Contact Maintainer</a></li>
+              <li><a href="mailto:anasadelismail2023@gmail.com">anasadelismail2023@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center bg-dark py-4 border-top border-secondary">
+    <div class="container">
+      <small class="text-secondary">Copyright &copy; 2026 Workprint. All rights reserved. Built for Atlassian Cloud.</small>
+    </div>
+  </div>
+</footer>
 
-@@include('footer.htm')
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" width="680" height="480" fill="none">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#091e42" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#091e42" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="rovoGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6554c0"/>
+      <stop offset="100%" stop-color="#0052cc"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052cc"/>
+      <stop offset="100%" stop-color="#2684ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main Window Frame -->
+  <g filter="url(#cardShadow)">
+    <rect x="20" y="16" width="640" height="448" rx="10" fill="#ffffff" stroke="#dfe1e6" stroke-width="1.5"/>
+    
+    <!-- Window Bar -->
+    <path d="M20 26C20 20.477 24.477 16 30 16H650C655.523 16 660 20.477 660 26V52H20V26Z" fill="#f4f5f7"/>
+    <circle cx="44" cy="34" r="5" fill="#ff5630"/>
+    <circle cx="60" cy="34" r="5" fill="#ffab00"/>
+    <circle cx="76" cy="34" r="5" fill="#36b37e"/>
+    <rect x="100" y="26" width="480" height="16" rx="4" fill="#ebecf0"/>
+    <text x="340" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#5e6c84" text-anchor="middle">workprint.atlassian.net/jira/your-work — Workprint Capacity Intelligence</text>
+
+    <!-- Top App Bar -->
+    <rect x="20" y="52" width="640" height="54" fill="#ffffff" stroke="#ebecf0" stroke-width="1"/>
+    <!-- Logo & Title -->
+    <rect x="36" y="63" width="32" height="32" rx="6" fill="#0052cc"/>
+    <path d="M42 69L46 81H47.5L50 73L52.5 81H54L58 69H55.5L53.2 77.5L50.5 69.5H49.5L46.8 77.5L44.5 69H42Z" fill="#ffffff"/>
+    <text x="76" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#172b4d">Alex Chen</text>
+    <text x="76" y="93" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#5e6c84">Senior Staff Engineer • Core Systems • Sprint 42</text>
+    <rect x="526" y="67" width="118" height="24" rx="4" fill="#deebff"/>
+    <text x="585" y="83" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#0052cc" text-anchor="middle">In Focus • 92% Load</text>
+
+    <!-- Cross-Product Workload Bar -->
+    <rect x="36" y="120" width="608" height="92" rx="6" fill="#fafbfc" stroke="#dfe1e6" stroke-width="1"/>
+    <text x="52" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#172b4d">Cross-Product Engineering Telemetry (Past 7 Days)</text>
+    <text x="628" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#5e6c84" text-anchor="end">38.5 / 40.0 Logged Hours</text>
+
+    <!-- Segmented Bar -->
+    <rect x="52" y="152" width="310" height="12" rx="3" fill="#0052cc"/>
+    <rect x="366" y="152" width="180" height="12" rx="3" fill="#2684ff"/>
+    <rect x="550" y="152" width="78" height="12" rx="3" fill="#00a3bf"/>
+
+    <!-- Legend -->
+    <circle cx="58" cy="188" r="4.5" fill="#0052cc"/>
+    <text x="68" y="192" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#172b4d"><tspan font-weight="600">Jira Software:</tspan> 20.0h (52%)</text>
+    
+    <circle cx="258" cy="188" r="4.5" fill="#2684ff"/>
+    <text x="268" y="192" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#172b4d"><tspan font-weight="600">Bitbucket PRs:</tspan> 12.5h (33%)</text>
+
+    <circle cx="468" cy="188" r="4.5" fill="#00a3bf"/>
+    <text x="478" y="192" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#172b4d"><tspan font-weight="600">Confluence:</tspan> 6.0h (15%)</text>
+
+    <!-- 3 Metrics Columns -->
+    <!-- Jira Card -->
+    <rect x="36" y="224" width="192" height="106" rx="6" fill="#ffffff" stroke="#dfe1e6" stroke-width="1"/>
+    <rect x="48" y="236" width="22" height="22" rx="4" fill="#deebff"/>
+    <text x="59" y="251" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#0052cc" text-anchor="middle">J</text>
+    <text x="76" y="251" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#172b4d">Jira Workload</text>
+    <text x="48" y="282" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#172b4d">7 Tasks</text>
+    <text x="48" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#5e6c84">4 In Progress • 3 In Review</text>
+    <rect x="48" y="312" width="168" height="6" rx="3" fill="#ebecf0"/>
+    <rect x="48" y="312" width="134" height="6" rx="3" fill="#0052cc"/>
+
+    <!-- Bitbucket Card -->
+    <rect x="244" y="224" width="192" height="106" rx="6" fill="#ffffff" stroke="#dfe1e6" stroke-width="1"/>
+    <rect x="256" y="236" width="22" height="22" rx="4" fill="#e6fcff"/>
+    <text x="267" y="251" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#00a3bf" text-anchor="middle">B</text>
+    <text x="284" y="251" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#172b4d">Bitbucket PRs</text>
+    <text x="256" y="282" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#172b4d">4 Reviews</text>
+    <text x="256" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#ff8b00">2.5h Turnaround Lag</text>
+    <rect x="256" y="312" width="168" height="6" rx="3" fill="#ebecf0"/>
+    <rect x="256" y="312" width="112" height="6" rx="3" fill="#2684ff"/>
+
+    <!-- Confluence Card -->
+    <rect x="452" y="224" width="192" height="106" rx="6" fill="#ffffff" stroke="#dfe1e6" stroke-width="1"/>
+    <rect x="464" y="236" width="22" height="22" rx="4" fill="#eae6ff"/>
+    <text x="475" y="251" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#6554c0" text-anchor="middle">C</text>
+    <text x="492" y="251" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#172b4d">Confluence Specs</text>
+    <text x="464" y="282" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#172b4d">3 Pages</text>
+    <text x="464" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#5e6c84">Actively authored this cycle</text>
+    <rect x="464" y="312" width="168" height="6" rx="3" fill="#ebecf0"/>
+    <rect x="464" y="312" width="70" height="6" rx="3" fill="#00a3bf"/>
+
+    <!-- Rovo AI Alert Banner -->
+    <rect x="36" y="342" width="608" height="74" rx="6" fill="#faf5ff" stroke="#dfd8fd" stroke-width="1"/>
+    <!-- Rovo Sparkle Icon -->
+    <rect x="48" y="354" width="30" height="30" rx="6" fill="url(#rovoGlow)"/>
+    <path d="M63 360L64.5 365L69.5 366.5L64.5 368L63 373L61.5 368L56.5 366.5L61.5 365L63 360Z" fill="#ffffff"/>
+    <text x="88" y="368" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#403294">Workprint Rovo Capacity Agent • Sprint Health Alert</text>
+    <text x="88" y="386" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#5243aa">Alex has 2 pull request reviews on critical path repo 'workprint/feature'. Sprint capacity remains balanced at 92% load.</text>
+    <rect x="526" y="356" width="106" height="26" rx="4" fill="#6554c0"/>
+    <text x="579" y="373" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Reassign Task</text>
+
+    <!-- Bottom Status Footer -->
+    <text x="36" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#5e6c84">Atlassian Forge asApp() Security • Zero Outside Cloud Storage • 100% Real-Time Ephemeral Aggregation</text>
+  </g>
+</svg>

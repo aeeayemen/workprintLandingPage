@@ -1,122 +1,117 @@
-@@include('header.htm')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cross-Platform Engineering Telemetry with Atlassian Forge | Workprint</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Technical walkthrough of cross-platform engineering capacity synthesis across Jira, Confluence, and Bitbucket using Atlassian Forge and Rovo AI.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-@@include('blocks/navigation.htm', {"pages" : "active", "blogSingle" : "active"})
+<body class="body-wrapper">
 
-<!--====================================
-=            Single Article            =
-=====================================-->
-<section class="section blog-single">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-10 m-auto">
-				<!-- Single Post -->
-				<article class="single-post">
-					<!-- Post title -->
-					<div class="post-title text-center">
-						<h1>Innovation distinguishes between a leader and a follower.</h1>
-						<!-- Tags -->
-						<ul class="list-inline post-tag">
-							<li class="list-inline-item">
-								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="author-thumb">
-							</li>
-							<li class="list-inline-item">
-								<a href="#">Thomas Johnson</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="#">August 8, 2017</a>
-							</li>
-						</ul>
-					</div>
-					<!-- Post body -->
-					<div class="post-body">
-						<!-- Feature Image -->
-						<div class="feature-image">
-							<img class="img-fluid" src="images/blog/single-blog-feature-image.jpg" alt="feature-image">
-						</div>
-						<!-- Paragrapgh -->
-						<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
-						<p>Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-						<!-- Blockquote -->
-						<div class="quote">
-							<blockquote>
-								Design is not just what it looks like and feels like. Design is how it works.
-							</blockquote>
-						</div>
-						<!-- Paragrapgh -->
-						<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
-						<!-- Post Image -->
-						<div class="post-image text-center">
-							<img class="img-fluid" src="images/blog/post-body-image.jpg" alt="post-body-image">
-						</div>
-						<!-- Paragrapgh -->
-						<p>Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-					</div>
-				</article>
-				<!-- About Author Widget -->
-				<div class="about-author">
-					<h2>About this author</h2>
-					<div class="media">
-						<!-- Author Image -->
-						<div class="image">
-							<img class="d-flex justify-content-center align-self-center" src="images/team/marketing-team-03.jpg" alt="author-image">
-						</div>
-						<!-- About Author -->
-						<div class="media-body align-self-center">
-							<!-- Author Name -->
-							<h3>Jonathon Andrew</h3>
-							<!-- Bio -->
-							<p>Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Mauris blandit aliquet elit, </p>
-							<!-- Author Social links -->
-							<ul class="list-inline social-links">
-								<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-facebook"></i></a></li>
-								<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-twitter"></i></a></li>
-								<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-instagram"></i></a></li>
-								<li class="list-inline-item"><a href="https://themefisher.com/"><i class="ti-dribbble"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+  <div class="container">
+    <a class="navbar-brand py-1" href="index.html">
+      <img src="images/logo.svg" alt="Workprint" height="36">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="ti-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Architecture</a></li>
+        <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Legal <span><i class="ti-angle-down"></i></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a class="dropdown-item" href="privacy-policy.html#personal-data">Personal Data Declaration</a></li>
+            <li><a class="dropdown-item" href="terms.html">Terms of Service</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Support</a></li>
+        <li class="nav-item ml-lg-3 mt-2 mt-lg-0"><a class="btn btn-main-sm" href="index.html#install">Install App</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="section gradient-banner pb-4 pt-5">
+  <div class="container position-relative">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-9">
+        <span class="wp-lozenge wp-lozenge-rovo mb-2">Technical Article</span>
+        <h1 class="text-white font-weight-bold mb-3" style="font-size: 36px; line-height: 46px;">
+          Unifying Telemetry Across Jira, Confluence, and Bitbucket
+        </h1>
+        <p class="text-white opacity-90 lead" style="font-size: 16px;">
+          Published November 20, 2026 &bull; Workprint Engineering Team
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
-<!--====  End of Single Article  ====-->
 
-<!--======================================
-=            Related Article            =
-=======================================-->
-<section class="section related-articles bg-gray">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 title">
-				<!-- Section Title -->
-				<h2>Related Articles</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-01.jpg",
-					"post-title" 	: "Innovation distinguishes between a leader and a follower."
-				})
-			</div>
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-02.jpg",
-					"post-title" 	: "Design is not just what it looks like and feels like. Design is how it works."
-				})
-			</div>
-			<div class="col-lg-4 col-md-6">
-				@@include('blocks/article.htm',{
-					"img-src" 		: "images/blog/post-03.jpg",
-					"post-title" 	: "Design is not just what it looks like and feels like. Design is how it works."
-				})
-			</div>
-		</div>
-	</div>
+<section class="section pt-5 pb-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="bg-white p-4 p-md-5 rounded border shadow-sm">
+          <h3 class="font-weight-bold text-dark mb-3">The Multi-Silo Engineering Challenge</h3>
+          <p class="text-muted mb-4" style="font-size: 15px; line-height: 26px;">
+            In high-performing software teams, developers don't live in a single tab. They jump between Jira boards to track deliverables, Confluence spaces to collaborate on architectural decision records, and Bitbucket to review pull requests and verify CI/CD pipelines.
+          </p>
+
+          <h4 class="font-weight-bold text-dark mb-3">Architecting on Atlassian Forge</h4>
+          <p class="text-muted mb-3" style="font-size: 15px; line-height: 26px;">
+            Workprint solves this by leveraging Atlassian Forge's serverless architecture. By executing in the customer's cloud tenant using <span class="wp-code-inline">api.asApp()</span>, Workprint aggregates:
+          </p>
+          <ul class="text-muted mb-4 pl-4" style="font-size: 14px; line-height: 24px;">
+            <li>Jira tasks via <span class="wp-code-inline">POST /rest/api/3/search/jql</span> to measure allocated timetracking seconds and remaining estimates.</li>
+            <li>Confluence pages via CQL search (<span class="wp-code-inline">contributor = "accountId"</span>) to evaluate active documentation context.</li>
+            <li>Bitbucket PRs via REST API v2 using workspace tokens to identify code review turnaround bottlenecks.</li>
+          </ul>
+
+          <div class="wp-callout wp-callout-info my-4">
+            <h6 class="font-weight-bold text-primary mb-1">Zero Outside-Cloud Storage Guarantee</h6>
+            <p class="text-muted mb-0" style="font-size: 13px;">
+              All aggregation is performed ephemerally in volatile memory. No user identifiers, account IDs, or work items are ever stored in external databases.
+            </p>
+          </div>
+
+          <h4 class="font-weight-bold text-dark mb-3">Powered by Atlassian Rovo AI</h4>
+          <p class="text-muted mb-4" style="font-size: 15px; line-height: 26px;">
+            With the <span class="wp-code-inline">workprint-rovo-agent</span> and <span class="wp-code-inline">analyze-workprint</span> action, team leads can simply ask Rovo: <em>"Who has available capacity to take on PR review for the payment gateway refactor?"</em> and receive an instant, multi-product synthesis with deep links.
+          </p>
+
+          <div class="pt-4 border-top mt-5 d-flex justify-content-between align-items-center">
+            <a href="blog.html" class="text-primary font-weight-bold">&larr; Back to Blog</a>
+            <a href="contact.html" class="btn btn-main-sm">Contact Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!--====  End of Related Article  ====-->
 
-@@include('blocks/footer.htm')
+<!-- Footer -->
+<footer>
+  <div class="text-center bg-dark py-4">
+    <div class="container">
+      <small class="text-secondary">Copyright &copy; 2026 Workprint. All rights reserved. Built for Atlassian Cloud.</small>
+    </div>
+  </div>
+</footer>
 
-@@include('footer.htm')
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
